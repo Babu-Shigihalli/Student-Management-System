@@ -22,10 +22,15 @@ Technologies Used:-
 
 Project Structure
 src/main/java/net/javaguides/sms
+
 ├── controller   → Handles HTTP requests and routing
+
 ├── entity       → Defines the Student entity
+
 ├── repository   → JPA repository for database operations
+
 ├── service      → Business logic interfaces and implementation
+
 └── StudentManagementSystemApplication.java → Main Spring Boot application
 
 How to Run:
