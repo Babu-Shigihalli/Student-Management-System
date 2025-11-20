@@ -8,16 +8,25 @@ Overview
 
 Features:
 *Add new student records
+
 *Edit existing student details
+
 *Delete student records
+
+
 -View all student records in a tabular format
 *Integrated with database using JPA for persistent storage
+
 *MVC architecture with Spring Boot controllers, services, and repositories
+
 
 Technologies Used:-
 -Backend: Java, Spring Boot, JPA/Hibernate
+
 -Frontend: HTML
+
 -Database: H2 / MySQL (depending on configuration)
+
 -Version Control: GitHub
 
 Project Structure
@@ -35,8 +44,11 @@ src/main/java/net/javaguides/sms
 
 How to Run:
 Clone the repository:
+
 git clone https://github.com/Babu-Shigihalli/Student-Management-System.git
+
 Open the project in your favorite IDE (IntelliJ IDEA, Eclipse, VS Code).
+
 Configure database (H2 or MySQL) in application.properties.
 
 Run the Spring Boot application:
@@ -47,6 +59,9 @@ http://localhost:8080/students
 
 Future Enhancements:*
 Add authentication and authorization for admin/student roles
+
 Implement search/filter functionality
+
 Enhance UI with CSS/Bootstrap
+
 Add export to CSV/PDF feature
