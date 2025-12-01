@@ -1,67 +1,98 @@
-# Student-Management-System
- Student management application
+📚 Student Management System
 
- 
-Student Management System
-Overview
- A web-based CRUD application for managing student records (add, edit, delete, view). Built with Spring Boot, Java, JPA, and HTML. This project demonstrates full-stack web development skills, MVC architecture, and database integration.
+A simple and efficient web-based CRUD application for managing student records.
+Built using Spring Boot, Java, JPA/Hibernate, and HTML.
+This project demonstrates full-stack development, MVC architecture, and database integration.
 
-Features:
-*Add new student records
+🚀 Features
 
-*Edit existing student details
+➕ Add new student records
 
-*Delete student records
+✏️ Edit existing student details
 
+❌ Delete student records
 
--View all student records in a tabular format
-*Integrated with database using JPA for persistent storage
+👀 View all students in a clean table format
 
-*MVC architecture with Spring Boot controllers, services, and repositories
+🗄️ JPA/Hibernate for persistent database storage
 
+🧩 MVC architecture using Controllers, Services & Repositories
 
-Technologies Used:-
--Backend: Java, Spring Boot, JPA/Hibernate
+🛠️ Technologies Used
 
--Frontend: HTML
+Backend
 
--Database: H2 / MySQL (depending on configuration)
+Java
 
--Version Control: GitHub
+Spring Boot
 
-Project Structure
+Spring MVC
+
+JPA / Hibernate
+
+Frontend
+
+HTML (can be extended with CSS/Bootstrap)
+
+Database
+
+H2 (default) / MySQL (optional configuration)
+
+Tools
+
+Maven
+
+Git & GitHub
+
+📁 Project Structure
 src/main/java/net/javaguides/sms
+│
+├── controller        # Handles HTTP requests
+├── entity            # Student entity class
+├── repository        # JPA repository layer
+├── service           # Business logic layer
+└── StudentManagementSystemApplication.java   # Main Spring Boot class
 
-├── controller   → Handles HTTP requests and routing
-
-├── entity       → Defines the Student entity
-
-├── repository   → JPA repository for database operations
-
-├── service      → Business logic interfaces and implementation
-
-└── StudentManagementSystemApplication.java → Main Spring Boot application
-
-How to Run:
-Clone the repository:
-
+▶️ How to Run the Project
+1️⃣ Clone the repository
 git clone https://github.com/Babu-Shigihalli/Student-Management-System.git
 
-Open the project in your favorite IDE (IntelliJ IDEA, Eclipse, VS Code).
+2️⃣ Open in your IDE
 
-Configure database (H2 or MySQL) in application.properties.
+Use IntelliJ IDEA, Eclipse, or VS Code.
 
-Run the Spring Boot application:
+3️⃣ Configure the database
+
+Open src/main/resources/application.properties and set:
+
+For H2 (default):
+
+spring.datasource.url=jdbc:h2:mem:students
+spring.jpa.hibernate.ddl-auto=update
+
+
+For MySQL (optional):
+
+spring.datasource.url=jdbc:mysql://localhost:3306/sms
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+
+4️⃣ Run the application
 mvn spring-boot:run
 
-Open a web browser and go to:
-http://localhost:8080/students
+5️⃣ Open in browser
 
-Future Enhancements:*
-Add authentication and authorization for admin/student roles
+👉 http://localhost:8080/students
 
-Implement search/filter functionality
+🌟 Future Enhancements
 
-Enhance UI with CSS/Bootstrap
+🔐 Add admin & student authentication/authorization
 
-Add export to CSV/PDF feature
+🔎 Search & filter functionality
+
+🎨 Improve UI using CSS/Bootstrap
+
+📄 Export student list to CSV/PDF
+
+📱 Make UI mobile-responsive
