@@ -1,98 +1,117 @@
-📚 Student Management System
 
-A simple and efficient web-based CRUD application for managing student records.
-Built using Spring Boot, Java, JPA/Hibernate, and HTML.
-This project demonstrates full-stack development, MVC architecture, and database integration.
+ Student Management System
 
-🚀 Features
+A web-based Student Management System developed using Spring Boot that allows users to manage student details efficiently.  
+The application follows MVC architecture and uses a responsive frontend built with HTML, CSS, and JavaScript.
 
-➕ Add new student records
+---
 
-✏️ Edit existing student details
+✨ Key Highlights
 
-❌ Delete student records
+- Full CRUD operations on student data
+- Client-side search using JavaScript
+- Clean separation of layers (Controller, Service, Repository)
+- Easy to run locally
 
-👀 View all students in a clean table format
+---
 
-🗄️ JPA/Hibernate for persistent database storage
+🧩 Functionalities
 
-🧩 MVC architecture using Controllers, Services & Repositories
+- Create new student records
+- Display all students in a structured view
+- Update existing student details
+- Delete student records
+- Search students by name, email, or course
 
-🛠️ Technologies Used
+---
+
+ 🛠️ Tech Stack
 
 Backend
-
-Java
-
-Spring Boot
-
-Spring MVC
-
-JPA / Hibernate
+- Java
+- Spring Boot
+- Spring Data JPA
+- Hibernate
 
 Frontend
-
-HTML (can be extended with CSS/Bootstrap)
+- HTML
+- CSS
+- JavaScript
 
 Database
-
-H2 (default) / MySQL (optional configuration)
+- MySQL 
 
 Tools
+- Maven
+- Git
+- GitHub
+- IntelliJ IDEA
 
-Maven
+---
 
-Git & GitHub
+ 📁 Folder Structure
 
-📁 Project Structure
-src/main/java/net/javaguides/sms
-│
-├── controller        # Handles HTTP requests
-├── entity            # Student entity class
-├── repository        # JPA repository layer
-├── service           # Business logic layer
-└── StudentManagementSystemApplication.java   # Main Spring Boot class
+```
 
-▶️ How to Run the Project
-1️⃣ Clone the repository
+src/main/resources
+├── templates
+│   ├── students.html
+│   ├── create_student.html
+│   └── edit_student.html
+└── static
+├── css
+│   └── style.css
+└── js
+└── script.js
+
+````
+
+---
+
+▶️ How to Run the Application
+
+1. Clone the repository
+```bash
 git clone https://github.com/Babu-Shigihalli/Student-Management-System.git
+````
 
-2️⃣ Open in your IDE
+2. Open the project in IntelliJ IDEA
 
-Use IntelliJ IDEA, Eclipse, or VS Code.
+3. Run the application
 
-3️⃣ Configure the database
-
-Open src/main/resources/application.properties and set:
-
-For H2 (default):
-
-spring.datasource.url=jdbc:h2:mem:students
-spring.jpa.hibernate.ddl-auto=update
-
-
-For MySQL (optional):
-
-spring.datasource.url=jdbc:mysql://localhost:3306/sms
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
-
-4️⃣ Run the application
+```bash
 mvn spring-boot:run
+```
 
-5️⃣ Open in browser
+4. Open browser and visit
 
-👉 http://localhost:8080/students
+```
+http://localhost:8080/students
+```
 
-🌟 Future Enhancements
+---
 
-🔐 Add admin & student authentication/authorization
+ 🔎 Search Feature
 
-🔎 Search & filter functionality
+The search functionality is implemented using JavaScript.
+It filters student records dynamically on the client side without refreshing the page.
 
-🎨 Improve UI using CSS/Bootstrap
+---
 
-📄 Export student list to CSV/PDF
+📱 Responsive UI
 
-📱 Make UI mobile-responsive
+* Desktop view: table-based layout
+* Mobile view: card-style layout
+* Implemented using CSS media queries
+
+---
+
+🧠 What I Learned
+
+* Building CRUD applications using Spring Boot
+* Working with JPA and database integration
+* Designing responsive web pages using CSS
+* Integrating frontend with backend using Thymeleaf
+* Version control using Git and GitHub
+
+---
